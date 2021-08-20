@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 header {
     left: auto !important;
     max-width: 480px;
