@@ -17,10 +17,6 @@
   <body>
     <!-- Overlay panel -->
     <div class="body-overlay"></div>
-    <!-- Left panel -->
-    <div id="panel-left"></div>
-    <!-- Right panel -->
-    <div id="panel-right"></div>
 
     <div class="page page--main" data-page="profile">
       <!-- PAGE CONTENT -->
@@ -92,15 +88,6 @@
       </div>
     </div>
     <!-- PAGE END -->
-
-    <!-- Social Icons Popup -->
-    <div id="popup-social"></div>
-
-    <!-- Alert -->
-    <div id="popup-alert"></div>
-
-    <!-- Notifications -->
-    <div id="popup-notifications"></div>
 
     <script src="<?php echo base_url() ?>assets/client/vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="<?php echo base_url() ?>assets/client/vendor/jquery/jquery.validate.min.js"></script>

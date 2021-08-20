@@ -1,0 +1,60 @@
+body {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+header {
+    left: auto !important;
+    max-width: 480px;
+}
+
+.button {
+    padding: 15px 30px;
+}
+
+.button--success {
+    background-color: #30e391;
+    color: #fff;
+}
+
+.button--waiting {
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+.button--process {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.button--cancel {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.card__icon img{
+    margin: 0 auto;
+}
+
+.card__title {
+    text-align: center;
+}
+
+.page--pesan {
+    background-color: #f6f9fa;
+}
+
+#profile {
+    background-color: #f6f9fa;
+}
+
+#button-profile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.header__icon img {
+    background-color: white;
+}

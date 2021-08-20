@@ -9,19 +9,19 @@
             <div class="swiper-slide">
                 <ul class="bottom-navigation__icons">
                 <li>
-                    <a href="main.html">
+                    <a href="<?php echo base_url('home') ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg" alt="" title="" />
                     <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pesanan.html">
+                    <a href="<?php echo base_url('pesanan') ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/cart.svg" alt="" title="" />
                     <span>Pesanan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="user-profile.html">
+                    <a href="<?php echo base_url('profile') ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg" alt="" title="" />
                     <span>Profile</span>
                     </a>
@@ -31,15 +31,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Social Icons Popup -->
-    <div id="popup-social"></div>
-
-    <!-- Alert -->
-    <div id="popup-alert"></div>
-
-    <!-- Notifications -->
-    <div id="popup-notifications"></div>
 
     <script src="<?php echo base_url() ?>assets/client/vendor/jquery/jquery-3.5.1.min.js"></script>
     <script src="<?php echo base_url() ?>assets/client/vendor/jquery/jquery.validate.min.js"></script>

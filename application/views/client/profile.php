@@ -9,6 +9,7 @@
     <title>MobioKit - Premium Mobile Template</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
       rel="stylesheet"
@@ -17,16 +18,9 @@
   <body>
     <!-- Overlay panel -->
     <div class="body-overlay"></div>
-    <!-- Left panel -->
-    <div id="panel-left"></div>
-    <!-- Right panel -->
-    <div id="panel-right"></div>
 
     <div class="page page--main" data-page="main">
       <!-- PAGE CONTENT -->
-      <div
-        class="page__content page__content--with-header page__content--with-bottom-nav"
-      >
         <header class="header header--fixed header--change">
           <div class="header__inner">
             <div class="header__icon">
@@ -38,19 +32,13 @@
                 />
               </a>
             </div>
-            <div class="header__icon header__icon--more">
-              <a href="#" data-popup="social" class="open-popup">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/more.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
-            </div>
           </div>
         </header>
-
-        <div class="user-profile mb-20">
+        <div
+        class="page__content page__content--with-header page__content--with-bottom-nav"
+        id="profile"
+      >
+        <div class="mb-20">
           <div class="user-profile__thumb">
             <img
               src="<?php echo base_url() ?>assets/client/images/photos/image-21.jpg"
@@ -58,11 +46,11 @@
               title=""
             />
           </div>
-          <div class="user-profile__name">Alexandra Joy</div>
+          <div class="user-profile__name">Agus Suprapto</div>
         </div>
 
         <div class="page__title-bar">
-          <h3>Your Account Details</h3>
+          <h3>Detail Akun Kamu</h3>
         </div>
         <div class="fieldset">
           <ul class="custom-listing">
@@ -85,10 +73,11 @@
           </ul>
         </div>
 
-        <div class="buttons buttons--centered">
+        <div class="buttons buttons--centered" id="button-profile">
           <a href="forms.html" class="button button--main">EDIT</a>
           <a href="forms.html" class="button button--main">CHANGE PASSWORD</a>
           <a href="forms.html" class="button button--main">LOGOUT</a>
+        </div>
         </div>
       </div>
     </div>
@@ -124,12 +113,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Social Icons Popup -->
-    <div id="popup-social"></div>
-
-    <!-- Alert -->
-    <div id="popup-alert"></div>
 
     <!-- Notifications -->
     <div id="popup-notifications"></div>

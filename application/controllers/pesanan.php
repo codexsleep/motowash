@@ -9,7 +9,7 @@ class Pesanan extends CI_Controller {
         parent::__construct();
     }
 
-    // Halaman Dashboard
+    // Halaman Pesanan
     public function index() 
     {
         $data = array(  'title'             => 'Motowash',
