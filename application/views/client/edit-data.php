@@ -32,15 +32,6 @@
                 />
               </a>
             </div>
-            <div class="header__icon header__icon--more">
-              <a href="#" data-popup="social" class="open-popup">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/more.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
-            </div>
           </div>
         </header>
 

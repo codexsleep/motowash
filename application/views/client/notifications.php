@@ -70,19 +70,19 @@
             <div class="swiper-slide">
                 <ul class="bottom-navigation__icons">
                 <li>
-                    <a href="main.html">
+                    <a href="<?php echo base_url("home") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg" alt="" title="" />
                     <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pesanan.html">
+                    <a href="<?php echo base_url("pesanan") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/cart.svg" alt="" title="" />
                     <span>Pesanan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="user-profile.html">
+                    <a href="<?php echo base_url("profile") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg" alt="" title="" />
                     <span>Profile</span>
                     </a>

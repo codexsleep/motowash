@@ -24,18 +24,9 @@
         <header class="header header--fixed header--change">
           <div class="header__inner">
             <div class="header__icon">
-              <a href="main.html">
+              <a href="<?php echo base_url("profile") ?>">
                 <img
                   src="<?php echo base_url() ?>assets/client/images/icons/black/arrow-back.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
-            </div>
-            <div class="header__icon header__icon--more">
-              <a href="#" data-popup="social" class="open-popup">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/more.svg"
                   alt=""
                   title=""
                 />
@@ -54,7 +45,7 @@
           </div>
           <div class="user-profile__name">Alexandra Joy</div>
           <div class="login-form">
-            <form id="LoginForm" method="post" action="main.html">
+            <form id="LoginForm" method="post" action="<?php echo base_url("profile") ?>">
               <div class="login-form__row">
                 <label>Password Lama</label>
                 <input
