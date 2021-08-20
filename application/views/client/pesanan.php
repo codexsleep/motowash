@@ -20,7 +20,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--main">Sedang Dijemput</p>
+              <p class="button button--success">Success</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -34,6 +34,10 @@
                 Cuci Karpet
               </h4>
               <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
+              <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
@@ -44,7 +48,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--main">Sedang dikerjakan</p>
+              <p class="button button--waiting">Waiting</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -58,6 +62,10 @@
                 Cuci Karpet
               </h4>
               <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
+              <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
@@ -68,7 +76,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--main">Sedang diantar</p>
+              <p class="button button--process">Processed</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -82,6 +90,10 @@
                 Cuci Karpet
               </h4>
               <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
+              <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
@@ -92,7 +104,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--main">Selesai</p>
+              <p class="button button--cancel">Canceled</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />

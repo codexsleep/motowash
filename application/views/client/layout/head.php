@@ -9,6 +9,7 @@
     <title><?php echo $title ?></title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
       rel="stylesheet"
@@ -17,7 +18,3 @@
   <body>
     <!-- Overlay panel -->
     <div class="body-overlay"></div>
-    <!-- Left panel -->
-    <div id="panel-left"></div>
-    <!-- Right panel -->
-    <div id="panel-right"></div>

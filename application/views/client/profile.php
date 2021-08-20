@@ -6,9 +6,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
     />
-    <title>MobioKit - Premium Mobile Template</title>
+    <title>Motowash</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
+    <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
       rel="stylesheet"
@@ -17,40 +18,32 @@
   <body>
     <!-- Overlay panel -->
     <div class="body-overlay"></div>
-    <!-- Left panel -->
-    <div id="panel-left"></div>
-    <!-- Right panel -->
-    <div id="panel-right"></div>
 
     <div class="page page--main" data-page="main">
       <!-- PAGE CONTENT -->
-      <div
-        class="page__content page__content--with-header page__content--with-bottom-nav"
-      >
-        <header class="header header--fixed header--change">
+        <header class="header header--page header--fixed">
           <div class="header__inner">
-            <div class="header__icon">
-              <a href="main.html">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/arrow-back.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
+            <div
+              class="header__icon"
+              data-panel="left"
+            >
+              <div>Motowash</div>
             </div>
-            <div class="header__icon header__icon--more">
-              <a href="#" data-popup="social" class="open-popup">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/more.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
-            </div>
+            <a href="<?php echo base_url("notifications") ?>" class="header__icon">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/white/notifications.svg"
+                alt=""
+                title=""
+              />
+            </a>
           </div>
         </header>
 
-        <div class="user-profile mb-20">
+        <div
+        class="page__content page__content--with-header page__content--with-bottom-nav"
+        id="profile"
+      >
+        <div class="mb-20">
           <div class="user-profile__thumb">
             <img
               src="<?php echo base_url() ?>assets/client/images/photos/image-21.jpg"
@@ -58,37 +51,58 @@
               title=""
             />
           </div>
-          <div class="user-profile__name">Alexandra Joy</div>
+          <div class="user-profile__name">Agus Suprapto</div>
         </div>
 
         <div class="page__title-bar">
-          <h3>Your Account Details</h3>
+          <h3>Detail Akun Kamu</h3>
         </div>
         <div class="fieldset">
           <ul class="custom-listing">
-            <li class="user">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg"
+                alt=""
+                title=""
+              />
               <span>Nama:</span>
               Dimas Aditya Mukhsinin
             </li>
-            <li class="phone">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/mobile.svg"
+                alt=""
+                title=""
+              />
               <span>No Telpon:</span>
               088888888888
             </li>
-            <li class="gender">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/sex.svg"
+                alt=""
+                title=""
+              />
               <span>Gender:</span>
               Laki-laki
             </li>
-            <li class="address">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg"
+                alt=""
+                title=""
+              />
               <span>Alamat:</span>
-              Jl.Purwodadi, Perumahan Primkopad, Blok C No.38
+              Jl.Purwodadi, Perumahan Primkopad
             </li>
           </ul>
         </div>
 
-        <div class="buttons buttons--centered">
-          <a href="forms.html" class="button button--main">EDIT</a>
-          <a href="forms.html" class="button button--main">CHANGE PASSWORD</a>
-          <a href="forms.html" class="button button--main">LOGOUT</a>
+        <div class="buttons buttons--centered" id="button-profile">
+          <a href="<?php echo base_url("editdata"); ?>" class="button button--main">EDIT</a>
+          <a href="<?php echo base_url("changepassword"); ?>" class="button button--main">CHANGE PASSWORD</a>
+          <a href="<?php echo base_url("login"); ?>" class="button button--main">LOGOUT</a>
+        </div>
         </div>
       </div>
     </div>
@@ -102,19 +116,19 @@
             <div class="swiper-slide">
                 <ul class="bottom-navigation__icons">
                 <li>
-                    <a href="main.html">
+                    <a href="<?php echo base_url("home") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg" alt="" title="" />
                     <span>Home</span>
                     </a>
                 </li>
                 <li>
-                    <a href="pesanan.html">
+                    <a href="<?php echo base_url("pesanan") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/cart.svg" alt="" title="" />
                     <span>Pesanan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="user-profile.html">
+                    <a href="<?php echo base_url("profile") ?>">
                     <img src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg" alt="" title="" />
                     <span>Profile</span>
                     </a>
@@ -124,12 +138,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Social Icons Popup -->
-    <div id="popup-social"></div>
-
-    <!-- Alert -->
-    <div id="popup-alert"></div>
 
     <!-- Notifications -->
     <div id="popup-notifications"></div>

@@ -9,10 +9,11 @@ class Pesan extends CI_Controller {
         parent::__construct();
     }
 
-    // Halaman Dashboard
+    // Halaman Pesan
     public function index() 
     {
-        $this->load->view('client/pesan');
+        $data = array(  'title'             => 'Motowash');
+        $this->load->view('client/pesan', $data, FALSE);
     }
 }
 ?>
