@@ -20,7 +20,7 @@
       <header class="header header--fixed">
         <div class="header__inner">
           <div class="header__icon">
-            <a href="splash.html">
+            <a href="<?php echo base_url("login"); ?>">
               <img
                 src="<?php echo base_url() ?>assets/client/images/icons/white/arrow-back.svg"
                 alt=""
@@ -36,7 +36,7 @@
           <h2 class="login__title">Buat akun</h2>
           <p class="login__text">Gabung cuma gratis!</p>
           <div class="login-form">
-            <form id="LoginForm" method="post" action="main.html">
+            <form id="LoginForm" method="post" action="<?php echo base_url("home"); ?>">
               <div class="login-form__row">
                 <label class="login-form__label">Nama</label>
                 <input
