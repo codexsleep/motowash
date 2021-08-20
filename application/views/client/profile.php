@@ -21,19 +21,24 @@
 
     <div class="page page--main" data-page="main">
       <!-- PAGE CONTENT -->
-        <header class="header header--fixed header--change">
+        <header class="header header--page header--fixed">
           <div class="header__inner">
-            <div class="header__icon">
-              <a href="main.html">
-                <img
-                  src="<?php echo base_url() ?>assets/client/images/icons/black/arrow-back.svg"
-                  alt=""
-                  title=""
-                />
-              </a>
+            <div
+              class="header__icon"
+              data-panel="left"
+            >
+              <div>Motowash</div>
             </div>
+            <a href="<?php echo base_url("notifications") ?>" class="header__icon">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/white/notifications.svg"
+                alt=""
+                title=""
+              />
+            </a>
           </div>
         </header>
+
         <div
         class="page__content page__content--with-header page__content--with-bottom-nav"
         id="profile"
@@ -88,15 +93,15 @@
                 title=""
               />
               <span>Alamat:</span>
-              Jl.Purwodadi, Perumahan Primkopad, Blok C No.38
+              Jl.Purwodadi, Perumahan Primkopad
             </li>
           </ul>
         </div>
 
         <div class="buttons buttons--centered" id="button-profile">
-          <a href="forms.html" class="button button--main">EDIT</a>
-          <a href="forms.html" class="button button--main">CHANGE PASSWORD</a>
-          <a href="forms.html" class="button button--main">LOGOUT</a>
+          <a href="<?php echo base_url("editdata"); ?>" class="button button--main">EDIT</a>
+          <a href="<?php echo base_url("changepassword"); ?>" class="button button--main">CHANGE PASSWORD</a>
+          <a href="<?php echo base_url("login"); ?>" class="button button--main">LOGOUT</a>
         </div>
         </div>
       </div>
