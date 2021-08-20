@@ -9,6 +9,7 @@
     <title>MobioKit - Premium Mobile Template</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
       rel="stylesheet"
@@ -20,7 +21,6 @@
 
     <div class="page page--main" data-page="profile">
       <!-- PAGE CONTENT -->
-      <div class="page__content">
         <header class="header header--fixed header--change">
           <div class="header__inner">
             <div class="header__icon">
@@ -35,7 +35,10 @@
           </div>
         </header>
 
-        <div class="user-profile">
+        <div
+        class="page__content page__content--with-header"
+        id="profile"
+      >
           <div class="user-profile__thumb">
             <img
               src="<?php echo base_url() ?>assets/client/images/photos/image-21.jpg"
@@ -74,9 +77,7 @@
                 />
               </div>
             </form>
-          </div>
         </div>
-      </div>
     </div>
     <!-- PAGE END -->
 
