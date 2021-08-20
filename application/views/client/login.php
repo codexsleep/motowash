@@ -6,6 +6,7 @@
 <title>Motowash</title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/vendor/swiper/swiper.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/style.css">
+<link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet"> 
 </head>
 <body>
@@ -34,7 +35,7 @@
 						<p>Tidak punya akun?</p>
 						<a href="<?php echo base_url(
           'signup'
-      ); ?>" class="button button--secondary button--full">DAFTAR</a>
+      ); ?>" class="button button--secondary button--full btn-daftar">DAFTAR</a>
 					</div>
 				</div>
 		</div>

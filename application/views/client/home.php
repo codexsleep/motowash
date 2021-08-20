@@ -13,7 +13,7 @@
             <div class="card__icon">
                 <img src="<?php echo base_url(); ?>assets/client/images/icons/blue/carpet.svg" alt="" title="" />
             </div>
-            <h4 class="card__title">Cuci Karpet</h4>
+            <h4 class="card__title title--fitur">Cuci Karpet</h4>
         </a>
         <a href="<?php echo base_url("pesan"); ?>" class="card card--style-icon card--style-round-corners">
             <div class="card__icon">
@@ -23,7 +23,7 @@
                 title=""
                 />
             </div>
-            <h4 class="card__title">Cuci motor</h4>
+            <h4 class="card__title title--fitur">Cuci motor</h4>
         </a>
     </div>
     </div>

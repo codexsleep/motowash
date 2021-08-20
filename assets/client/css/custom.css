@@ -8,26 +8,26 @@ header {
     max-width: 480px;
 }
 
-.button {
-    padding: 15px 30px;
-}
-
 .button--success {
+    padding: 15px 30px;
     background-color: #30e391;
     color: #fff;
 }
 
 .button--waiting {
+    padding: 15px 30px;
     background-color: #0d6efd;
     color: #fff;
 }
 
 .button--process {
+    padding: 15px 30px;
     background-color: #ffc107;
     color: #fff;
 }
 
 .button--cancel {
+    padding: 15px 30px;
     background-color: #dc3545;
     color: #fff;
 }
@@ -36,7 +36,7 @@ header {
     margin: 0 auto;
 }
 
-.card__title {
+.title--fitur {
     text-align: center;
 }
 
@@ -55,6 +55,10 @@ header {
     margin-bottom: 20px;
 }
 
+#button-profile a {
+    margin-bottom: 10px;
+}
+
 .user-akun {
     display: flex;
     align-items: center;
@@ -68,4 +72,8 @@ header {
 
 .user-profile {
     height: 100%;
+}
+
+.edit-data {
+    margin-bottom: 40px;
 }

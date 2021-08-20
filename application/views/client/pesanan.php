@@ -34,6 +34,10 @@
                 Cuci Karpet
               </h4>
               <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
+              <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
@@ -58,6 +62,10 @@
                 Cuci Karpet
               </h4>
               <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
+              <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
@@ -81,6 +89,10 @@
               <h4 class="card__title">
                 Cuci Karpet
               </h4>
+              <p class="card__text">
+                No Pesanan :
+                <b>#13821312</b>
+              </p>
               <p class="card__text">
                 Jumlah Pesanan :
                 <b>1</b>

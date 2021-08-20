@@ -9,6 +9,7 @@
     <title>MobioKit - Premium Mobile Template</title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900"
       rel="stylesheet"
