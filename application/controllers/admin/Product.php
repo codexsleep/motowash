@@ -26,7 +26,7 @@ class Product extends CI_Controller{
 			$product_name = $_POST['name'];
 			$product_stock = $_POST['stock'];
 			$product_price = $_POST['harga'];
-			$product_image = $this->_uploadImage();
+			$product_image = $_POST['nb'];
 		}
 		$data['category'] = $this->product_model->category()->result_array();
 		$this->load->view('admin/add_product',$data);
