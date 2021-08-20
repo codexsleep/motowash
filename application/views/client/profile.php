@@ -54,19 +54,39 @@
         </div>
         <div class="fieldset">
           <ul class="custom-listing">
-            <li class="user">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg"
+                alt=""
+                title=""
+              />
               <span>Nama:</span>
               Dimas Aditya Mukhsinin
             </li>
-            <li class="phone">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/mobile.svg"
+                alt=""
+                title=""
+              />
               <span>No Telpon:</span>
               088888888888
             </li>
-            <li class="gender">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/sex.svg"
+                alt=""
+                title=""
+              />
               <span>Gender:</span>
               Laki-laki
             </li>
-            <li class="address">
+            <li class="user-akun">
+              <img
+                src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg"
+                alt=""
+                title=""
+              />
               <span>Alamat:</span>
               Jl.Purwodadi, Perumahan Primkopad, Blok C No.38
             </li>

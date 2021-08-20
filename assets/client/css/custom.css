@@ -55,6 +55,13 @@ header {
     margin-bottom: 20px;
 }
 
-.header__icon img {
-    background-color: white;
+.user-akun {
+    display: flex;
+    align-items: center;
+    background: none;
+}
+
+.user-akun img {
+    max-width: 24px;
+    margin-right: 15px;
 }
