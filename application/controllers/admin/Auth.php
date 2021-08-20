@@ -19,6 +19,7 @@ class Auth extends CI_Controller{
                $validasi_login = $this->auth_model->authlogin($username,$password);
                if($validasi_login->num_rows() > 0){
                    //if login success
+                    $this->session->set_userdata('logged',TRUE);
                     $this->session->set_userdata('username',$username);
                     setcookie("error_login", 'false', time() + (3), "/");
                     redirect("admin/dashboard");

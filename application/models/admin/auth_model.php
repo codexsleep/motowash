@@ -6,4 +6,9 @@ class auth_model extends CI_Model{
         return $query;
     }
 
+    function datauser($username){
+        $query= $this->db->query("SELECT * FROM tbl_users WHERE user_username='$username' LIMIT 1");
+        return $query;
+    }
+
 }

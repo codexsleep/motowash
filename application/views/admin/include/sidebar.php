@@ -1,40 +1,44 @@
-<aside class="sidebar">
-            <div class="sidebar__backdrop"></div>
-            <div class="sidebar__container">
-                <div class="sidebar__top">
-                    <div class="container container--sm">
-                        <a class="sidebar__logo" href="index.html">
-                            <img class="sidebar__logo-icon" src="<?= base_url();?>assets/img/content/logotype.svg" alt="#" width="44" />
-                            <div class="sidebar__logo-text">arion</div>
-                        </a>
-                    </div>
-                </div>
-                <div class="sidebar__content" data-simplebar="data-simplebar">
-                    <nav class="sidebar__nav">
-                        <ul class="sidebar__menu">
-                            <li class="sidebar__menu-item"><a class="sidebar__link active" href="index.html" aria-expanded="true"><span class="sidebar__link-icon">
-                      <svg class="icon-icon-dashboard">
-                        <use xlink:href="#icon-dashboard"></use>
-                      </svg></span><span class="sidebar__link-text">Dashboard</span></a>
+
+            <!-- ========== Left Sidebar Start ========== -->
+
+            <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+                    <!--- Divider -->
+                    <div id="sidebar-menu">
+                        <ul>
+                            <li>
+                                <a href="<?= base_url();?>admin/dashboard" class="waves-effect"><i class="ti-home"></i><span> Dashboard </span></a>
                             </li>
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="calendar.html" aria-expanded="false"><span class="sidebar__link-icon">
-                      <svg class="icon-icon-calendar">
-                        <use xlink:href="#icon-calendar"></use>
-                      </svg></span><span class="sidebar__link-text">Calendar</span></a>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ion-bag"></i><span> Produk </span><span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="<?= base_url();?>admin/product/add">Tambah Produk</a></li>
+                                    <li><a href="<?= base_url();?>admin/product">Data Produk</a></li>
+                                </ul>
                             </li>
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="chat.html" aria-expanded="false"><span class="sidebar__link-icon">
-                      <svg class="icon-icon-chat">
-                        <use xlink:href="#icon-chat"></use>
-                      </svg></span><span class="sidebar__link-text">Chat</span></a>
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="ion-pricetags"></i><span> Layanan </span><span class="pull-right"><i class="mdi mdi-plus"></i></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="<?= base_url();?>admin/service/add">Tambah Layanan</a></li>
+                                    <li><a href="<?= base_url();?>admin/service">Data Layanan</a></li>
+                                </ul>
                             </li>
-                           
-                            <li class="sidebar__menu-item"><a class="sidebar__link" href="ui-kit.html" aria-expanded="false"><span class="sidebar__link-icon">
-                      <svg class="icon-icon-settings">
-                        <use xlink:href="#icon-settings"></use>
-                      </svg></span><span class="sidebar__link-text">UI Kit</span></a>
+                            
+                            <li>
+                                <a href="calendar.html" class="waves-effect"><i class="ion-android-user-menu"></i><span> Customer</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html" class="waves-effect"><i class="ion-android-contacts "></i><span> Karyawan</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html" class="waves-effect"><i class="ion-android-social"></i><span> Users</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html" class="waves-effect"><i class="ion-settings"></i><span> Pengaturan</span></a>
                             </li>
                         </ul>
-                    </nav>
-                </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div> <!-- end sidebarinner -->
             </div>
-        </aside>
+            <!-- Left Sidebar End -->
