@@ -50,26 +50,37 @@ $this->simple_login->cek_login();
               title=""
             />
           </div>
-          <div class="user-profile__name">Alexandra Joy</div>
+          <div class="user-profile__name"><?php echo $user->customer_name ?></div>
           <div class="login-form">
-            <form id="LoginForm" method="post" action="<?php echo base_url("profile") ?>">
+            <form id="LoginForm" method="post" action="<?php echo base_url("profile/changepassword") ?>">
+              <?php
+              //Notifikasi
+              if ($this->session->flashdata('warning')) {
+                echo '<div class="login-form__row setflex--center">';
+                echo '<div class="alert button--cancel">';
+                echo $this->session->flashdata('warning');
+                echo '</div>';
+                echo '</div>';
+              }
+              ?>
               <div class="login-form__row">
                 <label>Password Lama</label>
                 <input
-                  type="text"
-                  name="password_lama"
-                  value=""
-                  class="login-form__input required"
+                  type="password"
+                  name="pw_lama"
+                  class="login-form__input"
                 />
+                <label class="error error--black"><?php echo form_error('pw_lama'); ?></label>
               </div>
               <div class="login-form__row">
                 <label>Password Baru</label>
                 <input
-                  type="string"
-                  name="password_baru"
+                  type="password"
+                  name="pw_baru"
                   value=""
-                  class="login-form__input required"
+                  class="login-form__input"
                 />
+                <label class="error error--black"><?php echo form_error('pw_baru'); ?></label>
               </div>
               <div class="login-form__row">
                 <input

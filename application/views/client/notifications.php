@@ -10,7 +10,7 @@ $this->simple_login->cek_login();
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
     />
-    <title>Motowash</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/custom.css" />
@@ -38,7 +38,7 @@ $this->simple_login->cek_login();
             />
           </a>
           <div class="header__icon">
-            <div>LOGO</div>
+            <div>Motowash</div>
           </div>
         </div>
       </header>
@@ -48,19 +48,36 @@ $this->simple_login->cek_login();
         class="page__content page__content--with-header page__content--with-bottom-nav"
       >
         <div class="cards cards--11">
-          <div
-            class="card card--style-inline card--style-inline-bg card--style-round-corners"
-          >
-            <div class="card__details">
-              <!-- <h4 class="card__title">Smart Sliders</h4> -->
-              <h4 class="card__title">
-                Mohon tunggu, Driver akan segera menjemput pesanan anda
-              </h4>
-            </div>
-            <div class="card__icon">
-              <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
-            </div>
-          </div>
+          <?php foreach($pesanan as $pesanan) { ?>
+            <?php if($pesanan->order_status !== "Finished") {?>
+              <div
+                class="card card--style-inline card--style-inline-bg card--style-round-corners"
+              >
+                <div class="card__details">
+                  <h4 class="card__title">
+                    <?php if($pesanan->order_status === "Waiting") { ?>
+                      Mohon tunggu, Kami akan segera menkonfirmasi pesanan anda
+                    <?php }else if($pesanan->order_status === "Sucess") {?>
+                      Sukses, Driver akan segera menjemput pesanan anda
+                    <?php }else if($pesanan->order_status === "Processed") {?>
+                      Pelanggan, Pesanan anda sedang dikerjakan
+                    <?php }else if($pesanan->order_status === "Canceled") {?>
+                      Mohon maaf pesanan anda ditolak
+                    <?php } ?>
+                  </h4>
+                  <p class="card__text">
+                    No Pesanan : <b>#<?php echo $pesanan->order_id ?></b>
+                  </p>
+                  <p class="card__text">
+                    <?php echo date('Y-m-d H:i:s'); ?>
+                  </p>
+                </div>
+                <div class="card__icon">
+                  <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
+                </div>
+              </div>
+            <?php } ?>
+          <?php } ?>
         </div>
       </div>
     </div>

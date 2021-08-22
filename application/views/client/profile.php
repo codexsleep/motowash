@@ -10,7 +10,7 @@ $this->simple_login->cek_login();
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
     />
-    <title>Motowash</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/style.css" />
     <link rel="stylesheet" href="<?php echo base_url() ?>assets/client/css/custom.css" />
@@ -83,8 +83,8 @@ $this->simple_login->cek_login();
         </div>
 
         <div class="buttons buttons--centered" id="button-profile">
-          <a href="<?php echo base_url("editdata"); ?>" class="button button--main">EDIT</a>
-          <a href="<?php echo base_url("changepassword"); ?>" class="button button--main">CHANGE PASSWORD</a>
+          <a href="<?php echo base_url("profile/edit"); ?>" class="button button--main">EDIT</a>
+          <a href="<?php echo base_url("profile/changepassword"); ?>" class="button button--main">TUKAR PASSWORD</a>
           <a href="<?php echo base_url("logout"); ?>" class="button button--main">LOGOUT</a>
         </div>
         </div>

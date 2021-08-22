@@ -29,7 +29,7 @@
                   <p class="alert button--waiting"><?php echo $pesanan->order_status ?></p>
                 <?php }else if($pesanan->order_status === "Processed") { ?>
                   <p class="alert button--process"><?php echo $pesanan->order_status ?></p>
-                <?php }else if($pesanan->order_status === "Success") { ?>
+                <?php }else if($pesanan->order_status === "Success" || $pesanan->order_status === "Finished") { ?>
                   <p class="alert button--success"><?php echo $pesanan->order_status ?></p>
                 <?php }else if($pesanan->order_status === "Canceled") { ?>
                   <p class="alert button--cancel"><?php echo $pesanan->order_status ?></p>

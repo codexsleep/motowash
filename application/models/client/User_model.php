@@ -25,5 +25,11 @@ class User_model extends CI_Model
         $this->db->insert('tbl_customers', $data);
         return $this->db->insert_id();
     }
+
+    public function edit($data)
+    {
+        $this->db->where('customer_id', $data['customer_id']);
+        $this->db->update('tbl_customers', $data);
+    }
 }
 ?>

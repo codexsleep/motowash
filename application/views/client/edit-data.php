@@ -10,7 +10,7 @@ $this->simple_login->cek_login();
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
     />
-    <title>Motowash</title>
+    <title><?php echo $title; ?></title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/style.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
@@ -50,58 +50,50 @@ $this->simple_login->cek_login();
               title=""
             />
           </div>
-          <div class="user-profile__name">Alexandra Joy</div>
+          <div class="user-profile__name"><?php echo $user->customer_name ?></div>
           <div class="login-form edit-data">
             <form id="LoginForm" method="post" action="<?php echo base_url(
-                'profile'
+                'profile/edit'
             ); ?>">
               <div class="login-form__row">
                 <label>Nama</label>
                 <input
                   type="text"
                   name="nama"
-                  value=""
-                  class="login-form__input required"
+                  value="<?php echo $user->customer_name ?>"
+                  class="login-form__input"
                 />
+                <label class="error error--black"><?php echo form_error('nama'); ?></label>
               </div>
               <div class="login-form__row">
                 <label>No Telpon</label>
                 <input
                   type="number"
                   name="no_telpon"
-                  value=""
-                  class="login-form__input required"
+                  value="<?php echo $user->customer_telp ?>"
+                  class="login-form__input"
+                  disabled
                 />
               </div>
               <div class="login-form__row">
                 <label>Gender</label>
-                <!-- <input
-                  type="number"
-                  name="no_telpon"
-                  value=""
-                  class="login-form__input required"
-                /> -->
-
                 <div class="form__select">
-                  <select name="ContactSelect" class="required" style="background: white;">
-                    <option value="" disabled selected>Select options</option>
-                    <option value="1">select one</option>
-                    <option value="2">select two</option>
-                    <option value="3">select three</option>
-                    <option value="4">select four</option>
-                    <option value="5">select five</option>
+                  <select name="gender" class="required" style="background: white;">
+                    <option value="male" <?php if($user->customer_gender === "male") echo "selected"; ?>>Laki laki</option>
+                    <option value="female" <?php if($user->customer_gender === "female") echo "selected"; ?>>Perempuan</option>
                   </select>
                 </div>
+                <label class="error error--black"><?php echo form_error('gender'); ?></label>
               </div>
               <div class="login-form__row">
                 <label>Alamat</label>
                 <div class="form__row">
                   <textarea
                     name="Adddress"
-                    class="form__textarea required"
+                    class="form__textarea"
                     placeholder="Alamat"
                     style="background: white;"
-                  ></textarea>
+                  ><?php echo $user->customer_address ?></textarea>
                 </div>
               </div>
               <div class="login-form__row">
