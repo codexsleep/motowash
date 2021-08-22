@@ -7,12 +7,16 @@ class Pesanan extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model("client/pesan_model", "pesan_model");
     }
 
     // Halaman Pesanan
     public function index() 
     {
-        $data = array(  'title'             => 'Motowash',
+        $pesanan = $this->pesan_model->listing();
+
+        $data = array(  'title'             => 'Motowash | Pesanan',
+                        'pesanan'           => $pesanan,
                         'isi'               => 'client/pesanan');
         $this->load->view('client/layout/wrapper', $data, FALSE);
     }

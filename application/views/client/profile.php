@@ -55,7 +55,7 @@ $this->simple_login->cek_login();
               title=""
             />
           </div>
-          <div class="user-profile__name">Agus Suprapto</div>
+          <div class="user-profile__name"><?php echo $user->customer_name ?></div>
         </div>
 
         <div class="page__title-bar">
@@ -63,41 +63,21 @@ $this->simple_login->cek_login();
         </div>
         <div class="fieldset">
           <ul class="custom-listing">
-            <li class="user-akun">
-              <img
-                src="<?php echo base_url() ?>assets/client/images/icons/blue/user.svg"
-                alt=""
-                title=""
-              />
+            <li class="user" style="background-image: url('<?php echo base_url() ?>assets/client/images/icons/blue/user.svg')">
               <span>Nama:</span>
-              Dimas Aditya Mukhsinin
+              <?php echo $user->customer_name ?>
             </li>
-            <li class="user-akun">
-              <img
-                src="<?php echo base_url() ?>assets/client/images/icons/blue/mobile.svg"
-                alt=""
-                title=""
-              />
+            <li class="user" style="background-image: url('<?php echo base_url() ?>assets/client/images/icons/blue/mobile.svg')">
               <span>No Telpon:</span>
-              088888888888
+              <?php echo $user->customer_telp ?>
             </li>
-            <li class="user-akun">
-              <img
-                src="<?php echo base_url() ?>assets/client/images/icons/blue/sex.svg"
-                alt=""
-                title=""
-              />
+            <li class="user" style="background-image: url('<?php echo base_url() ?>assets/client/images/icons/blue/sex.svg')">
               <span>Gender:</span>
-              Laki-laki
+              <?php echo $user->customer_gender ?>
             </li>
-            <li class="user-akun">
-              <img
-                src="<?php echo base_url() ?>assets/client/images/icons/blue/home.svg"
-                alt=""
-                title=""
-              />
+            <li class="user" style="background-image: url('<?php echo base_url() ?>assets/client/images/icons/blue/home.svg')">
               <span>Alamat:</span>
-              Jl.Purwodadi, Perumahan Primkopad
+              <?php echo $user->customer_address ?>
             </li>
           </ul>
         </div>
@@ -105,7 +85,7 @@ $this->simple_login->cek_login();
         <div class="buttons buttons--centered" id="button-profile">
           <a href="<?php echo base_url("editdata"); ?>" class="button button--main">EDIT</a>
           <a href="<?php echo base_url("changepassword"); ?>" class="button button--main">CHANGE PASSWORD</a>
-          <a href="<?php echo base_url("login"); ?>" class="button button--main">LOGOUT</a>
+          <a href="<?php echo base_url("logout"); ?>" class="button button--main">LOGOUT</a>
         </div>
         </div>
       </div>

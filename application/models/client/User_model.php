@@ -10,6 +10,15 @@ class User_model extends CI_Model
         $this->load->database();
     }
 
+    public function detail()
+    {
+        $this->db->select('*');
+        $this->db->from('tbl_customers');
+        $this->db->where('customer_id', $this->session->userdata('customer_id'));
+        $query = $this->db->get();
+        return $query->row();
+    }
+
     // Tambah
     public function tambah($data)
     {

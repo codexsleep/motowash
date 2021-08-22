@@ -38,7 +38,8 @@ class Pesan extends CI_Controller {
             $data = array(  'order_item'   =>  $id,
                             'customer_id'   => $this->session->userdata('customer_id'),
                             'order_address'  =>  $i->post('alamat'),
-                            'order_number' => $i->post('jumlah_pesanan')
+                            'order_number' => $i->post('jumlah_pesanan'),
+                            'order_status'  =>  "Waiting"
                         );
 
             $this->pesan_model->tambah($data);

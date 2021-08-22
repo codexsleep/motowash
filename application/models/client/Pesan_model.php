@@ -10,6 +10,21 @@ class Pesan_model extends CI_Model
         $this->load->database();
     }
 
+    // Listing
+    public function listing()
+    {
+        $this->db->select('tbl_orders.*, tbl_services.service_name, tbl_services.service_icon');
+        $this->db->from('tbl_orders');
+        // JOIN
+        $this->db->join('tbl_services','tbl_services.service_id = tbl_orders.order_item','inner');
+        $this->db->where(
+            'customer_id',
+            $this->session->userdata('customer_id')
+        );
+        $query = $this->db->get();
+        return $query->result();
+    }
+
     public function detail($id)
     {
         $this->db->select('*');
@@ -21,7 +36,7 @@ class Pesan_model extends CI_Model
 
     public function tambah($data)
     {
-        $this->db->insert('tbl_orders',  $data);
+        $this->db->insert('tbl_orders', $data);
     }
 }
 ?>
