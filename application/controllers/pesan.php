@@ -38,6 +38,7 @@ class Pesan extends CI_Controller {
             $data = array(  'order_item'   =>  $id,
                             'customer_id'   => $this->session->userdata('customer_id'),
                             'order_address'  =>  $i->post('alamat'),
+                            'order_description'  =>  $i->post('keterangan'),
                             'order_number' => $i->post('jumlah_pesanan'),
                             'order_date'    => date('Y-m-d H:i:s'),
                             'order_status'  =>  "Waiting"

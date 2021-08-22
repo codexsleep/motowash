@@ -93,6 +93,13 @@ $this->simple_login->cek_login();
                 <label class="error error--black"><?php echo form_error('jumlah_pesanan'); ?></label>
               </div>
               <div class="login-form__row">
+                <label>Keterangan</label>
+                <textarea
+                  name="keterangan"
+                  class="login-form__input"
+                ><?php echo set_value('keterangan'); ?></textarea>
+              </div>
+              <div class="login-form__row">
                 <input
                   type="submit"
                   name="submit"
