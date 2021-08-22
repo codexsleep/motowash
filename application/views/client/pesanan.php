@@ -17,10 +17,14 @@
                 Jumlah Pesanan :
                 <b>1</b>
               </p>
+              <p class="card__text">
+                Biaya :
+                <b>Rp. 35000</b>
+              </p>
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--success">Success</p>
+              <p class="alert button--success">Success</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -48,7 +52,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--waiting">Waiting</p>
+              <p class="alert button--waiting">Waiting</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -76,7 +80,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--process">Processed</p>
+              <p class="alert button--process">Processed</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />
@@ -104,7 +108,7 @@
               <h4 class="card__title">
                 Status
               </h4>
-              <p class="button button--cancel">Canceled</p>
+              <p class="alert button--cancel">Canceled</p>
             </div>
             <div class="card__icon">
               <img src="<?php echo base_url() ?>assets/client/images/food.svg" alt="" title="" />

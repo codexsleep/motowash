@@ -9,22 +9,14 @@
         directly on your website or app using the Shop layout design.
     </p>
     <div class="cards cards--12">
-        <a href="<?php echo base_url("pesan"); ?>" class="card card--style-icon card--style-round-corners">
-            <div class="card__icon">
-                <img src="<?php echo base_url(); ?>assets/client/images/icons/blue/carpet.svg" alt="" title="" />
+        <?php foreach($service as $service) { ?>
+            <a href="<?php echo base_url("pesan/tambah/". $service->service_id); ?>" class="card card--style-icon card--style-round-corners">
+                <div class="card__icon">
+                    <img src="<?php echo $service->service_icon ?>" alt="<?php echo $service->service_name ?>" />
             </div>
-            <h4 class="card__title title--fitur">Cuci Karpet</h4>
-        </a>
-        <a href="<?php echo base_url("pesan"); ?>" class="card card--style-icon card--style-round-corners">
-            <div class="card__icon">
-                <img
-                src="<?php echo base_url(); ?>assets/client/images/icons/blue/scooter.svg"
-                alt=""
-                title=""
-                />
-            </div>
-            <h4 class="card__title title--fitur">Cuci motor</h4>
-        </a>
+            <h4 class="card__title title--fitur"><?php echo $service->service_name ?></h4>
+            </a>
+        <?php } ?>
     </div>
     </div>
 </div>

@@ -60,6 +60,7 @@ header {
 }
 
 #button-profile a {
+    padding: 15px 30px;
     margin-bottom: 10px;
 }
 
@@ -80,4 +81,33 @@ header {
 
 .edit-data {
     margin-bottom: 40px;
+}
+
+.alert {
+    display: inline-block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    text-align: center;
+}
+
+.setflex--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.error p {
+    padding: 0;
+}
+
+.error--select {
+    padding: 0 !important; 
+}
+
+.error--black {
+    color: grey !important;
 }

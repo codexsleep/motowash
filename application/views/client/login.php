@@ -1,9 +1,15 @@
+<?php
+// Proteksi Halaman
+if ($this->session->userdata('customer_id')) {
+    redirect(base_url('home'), 'refresh');
+} ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
-<title>Motowash</title>
+<title><?php echo $title; ?></title>
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/vendor/swiper/swiper.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/style.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
@@ -18,14 +24,26 @@
 			<h2 class="login__title">Selamat Datang</h2>
 			<p class="login__text">Login ke akun anda</p>
 				<div class="login-form">
-					<form id="LoginForm" method="post" action="<?php echo base_url('home'); ?>">
+					<form id="LoginForm" method="post" action="<?php echo base_url(); ?>">
+						<?php
+						//Notifikasi login gagal
+						if ($this->session->flashdata('warning')) {
+							echo '<div class="login-form__row setflex--center">';
+							echo '<div class="alert button--cancel">';
+							echo $this->session->flashdata('warning');
+							echo '</div>';
+							echo '</div>';
+						}
+						?>
 						<div class="login-form__row">
 							<label class="login-form__label">No Telpon</label>
-							<input type="text" name="Username" value="" class="login-form__input required" />
+							<input type="text" name="no_telpon" value="<?php echo set_value('no_telpon'); ?>" class="login-form__input" />
+                			<label class="error"><?php echo form_error('no_telpon'); ?></label>
 						</div>
 						<div class="login-form__row">
 							<label class="login-form__label">Password</label>
-							<input type="password" name="password" value="" class="login-form__input required" />
+							<input type="password" name="password" value="<?php echo set_value('password'); ?>" class="login-form__input" />
+                			<label class="error"><?php echo form_error('password'); ?></label>
 						</div>
 						<div class="login-form__row">
 							<input type="submit" name="submit" class="login-form__submit button button--main button--full" id="submit" value="LOGIN" />

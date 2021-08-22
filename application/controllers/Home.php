@@ -7,13 +7,17 @@ class Home extends CI_Controller {
     public function __construct()
     {
         parent::__construct();
+        $this->load->model("client/service_model", "service_model");
     }
 
     // Halaman Home
     public function index() 
     {
-        $data = array(  'title'             => 'Motowash',
-                        'isi'               => 'client/home');
+        $service = $this->service_model->listing();
+
+        $data = array(  'title'     => 'Motowash | Home',
+                        'service'   =>  $service,
+                        'isi'       => 'client/home');
         $this->load->view('client/layout/wrapper', $data, FALSE);
     }
 }
