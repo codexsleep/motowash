@@ -14,9 +14,11 @@ class Pesanan extends CI_Controller {
     public function index() 
     {
         $pesanan = $this->pesan_model->listing();
+        $notif_jumlah = $this->pesan_model->notifications_jumlah();
 
         $data = array(  'title'             => 'Motowash | Pesanan',
                         'pesanan'           => $pesanan,
+                        'notif_jumlah'      => $notif_jumlah,
                         'isi'               => 'client/pesanan');
         $this->load->view('client/layout/wrapper', $data, FALSE);
     }

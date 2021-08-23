@@ -61,6 +61,7 @@ $this->simple_login->cek_login();
                 echo $this->session->flashdata('warning');
                 echo '</div>';
                 echo '</div>';
+                $this->session->unset_userdata('warning');
               }
               ?>
               <div class="login-form__row">

@@ -8,15 +8,19 @@ class Profile extends CI_Controller {
     {
         parent::__construct();
         $this->load->model("client/user_model", "user_model");
+        $this->load->model("client/pesan_model", "pesan_model");
     }
 
     // Halaman Dashboard
     public function index() 
     {
         $user = $this->user_model->detail();
+        $notif_jumlah = $this->pesan_model->notifications_jumlah();
 
         $data = array(  'title' => 'Motowash | Profile',
-                        'user'  => $user);
+                        'user'  => $user,
+                        'notif_jumlah'  => $notif_jumlah
+                    );
         $this->load->view('client/profile', $data, false);
     }
 
