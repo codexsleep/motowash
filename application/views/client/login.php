@@ -22,7 +22,10 @@ if ($this->session->userdata('customer_id')) {
 
         <div class="login">
 		<div class="login__content">	
-			<h2 class="login__title">
+			<h2 class="login__title login-title">
+				Soalanigogo.com
+			</h2>
+			<h2 class="login__title login-title">
 				<img src="<?php echo base_url() ?>assets/client/images/motowash.jpeg" width="120" />
 			</h2>
 			<p class="login__text">Login ke akun anda</p>

@@ -111,3 +111,7 @@ header {
 .error--black {
     color: grey !important;
 }
+
+.login-title {
+    margin-bottom: 16px;
+} 
