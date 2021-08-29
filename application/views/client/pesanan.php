@@ -18,10 +18,12 @@
                   Jumlah Pesanan :
                   <b><?php echo $pesanan->order_number ?></b>
                 </p>
-                <p class="card__text">
-                  Biaya :
-                  <b>Rp. 35000</b>
-                </p>
+                <?php if($pesanan->order_cost) { ?>
+                  <p class="card__text">
+                    Biaya :
+                    <b>Rp. <?php echo $pesanan->order_cost ?></b>
+                  </p>
+                <?php } ?>
                 <h4 class="card__title">
                   Status
                 </h4>
