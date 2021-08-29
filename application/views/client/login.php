@@ -53,7 +53,7 @@ if ($this->session->userdata('customer_id')) {
 					<div class="login-form__bottom">
 						<p>Tidak punya akun?</p>
 						<a href="<?php echo base_url(
-          'signup'
+          'register'
       ); ?>" class="button button--secondary button--full btn-daftar">DAFTAR</a>
 					</div>
 				</div>

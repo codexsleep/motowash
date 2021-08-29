@@ -44,7 +44,7 @@ if ($this->session->userdata('customer_id')) {
           <p class="login__text">Gabung cuma gratis!</p>
           <div class="login-form">
             <form id="LoginForm" method="post" action="<?php echo base_url(
-                'signup'
+                'register'
             ); ?>">
               <div class="login-form__row">
                 <label class="login-form__label">Nama</label>

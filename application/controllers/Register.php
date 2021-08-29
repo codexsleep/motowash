@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Signup extends CI_Controller {
+class Register extends CI_Controller {
 
     // Load Model
     public function __construct()
@@ -10,7 +10,7 @@ class Signup extends CI_Controller {
         $this->load->model("client/user_model", "user_model");
     }
 
-    // Halaman Signup
+    // Halaman Register
     public function index() 
     {
         $valid = $this->form_validation;
@@ -30,9 +30,9 @@ class Signup extends CI_Controller {
                         array('required' => '%s harus diisi'));
 
         if($valid->run()==false){   
-            $data = array(  'title' =>  'Motowash | Signup',
+            $data = array(  'title' =>  'Motowash | Register',
                         );          
-            $this->load->view('client/signup',$data,false);
+            $this->load->view('client/register',$data,false);
         }else{
             $i = $this->input;
 
