@@ -10,6 +10,7 @@ if ($this->session->userdata('customer_id')) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui">
 <title><?php echo $title; ?></title>
+<link rel='icon' type='image/png' sizes='32x32' href='<?php echo base_url(); ?>assets/client/images/motowash.jpeg' />
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/vendor/swiper/swiper.min.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/style.css">
 <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
@@ -21,7 +22,9 @@ if ($this->session->userdata('customer_id')) {
 
         <div class="login">
 		<div class="login__content">	
-			<h2 class="login__title">Selamat Datang</h2>
+			<h2 class="login__title">
+				<img src="<?php echo base_url() ?>assets/client/images/motowash.jpeg" width="120" />
+			</h2>
 			<p class="login__text">Login ke akun anda</p>
 				<div class="login-form">
 					<form id="LoginForm" method="post" action="<?php echo base_url(); ?>">

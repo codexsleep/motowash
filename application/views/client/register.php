@@ -13,6 +13,7 @@ if ($this->session->userdata('customer_id')) {
       content="width=device-width, initial-scale=1, minimum-scale=1, minimal-ui"
     />
     <title>Motowash</title>
+    <link rel='icon' type='image/png' sizes='32x32' href='<?php echo base_url(); ?>assets/client/images/motowash.jpeg' />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/vendor/swiper/swiper.min.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/style.css" />
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/client/css/custom.css" />
